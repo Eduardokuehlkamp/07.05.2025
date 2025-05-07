@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio do Pedro</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar de Pedro" class="rounded-circle" width="150" height="150">
+        <p class="lead">Sou o Pedro</p>
+        <h1>Sobre mim:</h1>
+        <p>Tenho 16 anos, estudo no Colégio Estadual Leonilda Papen e estou no 2º ano do ensino médio na área de exatas.
+            Sou dedicado, gosto de aprender coisas novas e estou sempre buscando melhorar.
+        </p>
+        <p>Minhas habilidades:</p>
+        <div>
+            <p class="badge bg-secondary">jogar vôlei</p>
+            <p class="badge bg-secondary">jogos online</p>
+            <p class="badge bg-secondary">educação física</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus destaques:</h2>
+        <div class="row">
+            <!-- Projeto 1: Vôlei -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto1.png" class="card-img-top" alt="Imagem de vôlei">
+                    <div class="card-body">
+                        <h5 class="card-title">Experiência com Vôlei</h5>
+                        <p class="card-text">
+                            Pratico vôlei regularmente, o que me ajuda a desenvolver espírito de equipe, foco e resistência física. Já participei de treinos e jogos escolares representando minha escola.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Conheça mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2: P5.js -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto2.png" class="card-img-top" alt="Imagem de código com P5.js">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto com P5.js</h5>
+                        <p class="card-text">
+                            Utilizei a biblioteca P5.js para criar animações e interações visuais no navegador. Foi uma ótima forma de aprender lógica de programação e criatividade digital.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3: Alura pela SEED-PR -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Plataforma Alura">
+                    <div class="card-body">
+                        <h5 class="card-title">Cursos Alura - SEED-PR</h5>
+                        <p class="card-text">
+                            Participei de cursos online pela parceria da SEED-PR com a Alura. Aprendi sobre tecnologia, programação e desenvolvimento pessoal em uma plataforma moderna e acessível.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1: Vôlei -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Experiência com Vôlei</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        O vôlei me ensinou a trabalhar em equipe, lidar com desafios e manter o foco. A prática constante e os jogos escolares me ajudaram a melhorar fisicamente e socialmente.
+                    </p>
+                    <img src="img/projeto1.png" class="img-fluid w-100" alt="Imagem de vôlei">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: P5.js -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto com P5.js</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Explorei a biblioteca P5.js para programar animações gráficas diretamente no navegador. Com ela, desenvolvi projetos criativos aplicando conceitos de JavaScript, como loops, funções e interação com o mouse.
+                    </p>
+                    <img src="img/projeto2.png" class="img-fluid w-100" alt="Imagem de código com P5.js">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Alura -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cursos Alura pela SEED-PR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Através da parceria entre a SEED-PR e a Alura, participei de cursos sobre programação, design e habilidades digitais. Essa oportunidade me incentivou a seguir aprendendo online de forma prática e eficiente.
+                    </p>
+                    <img src="img/projeto-3.png" class="img-fluid w-100" alt="Plataforma Alura">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Acesse meu GitHub</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/Eduardokuehlkamp">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Pedro e Eduardo </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
